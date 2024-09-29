@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Solar System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="starry-background">
+        <!-- 太陽系中心 -->
+        <div class="sun">☀️</div>
+
+        <!-- 行星軌道與行星 -->
+        <div class="orbit mercury-orbit">
+            <div class="planet mercury" data-name="Mercury" onclick="showPlanetInfo('Mercury')">☿️</div>
+        </div>
+        <div class="orbit venus-orbit">
+            <div class="planet venus" data-name="Venus" onclick="showPlanetInfo('Venus')">♀️</div>
+        </div>
+        <div class="orbit earth-orbit">
+            <div class="planet earth" data-name="Earth" onclick="showPlanetInfo('Earth')">🌍</div>
+        </div>
+        <div class="orbit mars-orbit">
+            <div class="planet mars" data-name="Mars" onclick="showPlanetInfo('Mars')">♂️</div>
+        </div>
+        <div class="orbit jupiter-orbit">
+            <div class="planet jupiter" data-name="Jupiter" onclick="showPlanetInfo('Jupiter')">♃</div>
+        </div>
+        <div class="orbit saturn-orbit">
+            <div class="planet saturn" data-name="Saturn" onclick="showPlanetInfo('Saturn')">♄</div>
+        </div>
+        <div class="orbit uranus-orbit">
+            <div class="planet uranus" data-name="Uranus" onclick="showPlanetInfo('Uranus')">♅</div>
+        </div>
+        <div class="orbit neptune-orbit">
+            <div class="planet neptune" data-name="Neptune" onclick="showPlanetInfo('Neptune')">♆</div>
+        </div>
+
+        <!-- 行星資訊顯示區域 -->
+        <div id="planet-info" class="planet-info">
+            <h2 id="planet-title">Planet Information</h2>
+            <p id="planet-description">Hover over a planet to see more information.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
